@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Sergio Monter L.</title>
-    <link rel="stylesheet" href="../frontend/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
+    <nav class="nav">
+        <a href="#" class="nav__logo">Portafolio</a>
+        <ul class="nav__menu">
+            <li><a href="#proyectos" class="nav__item">Proyectos</a></li>
+            <li><a href="#experiencia" class="nav__item">Experiencia</a></li>
+            <li><a href="#contacto" class="nav__item">Contacto</a></li>
+        </ul>
+        <div class="nav__toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+  
     <header class="hero">
         <div class="hero__content">
             <h1 class="hero__title">Sergio Monter Lara</h1>
-            <p class="hero__subtitle">Ingeniedo en Desarrollo y Gestión de Software</p>
-            <img src="images/User_Example.webp" alt="Foto de perfil" class="hero__image">
-            <p class="hero__description">
-                Soy un desarrollador web con experiencia estudiantil en tecnologías como C++ JavaScript, React, Node.js, y SQL entre otras tecnologías. 
-                Me encanta ser altamente motivador y comprometido, con una sólida formación académica en Tecnologías
-                de la información por las universidades USTH y UAEH, he acumulado años de
-                experiencia laboral exitosa donde he demostrado habilidades destacadas en
-                liderazgo, resolución de problemas y manejo de personal en números mayores a 50
-                personas; Mi enfoque orientado a resultados y mi capacidad para trabajar de manera colaborativa me han permitido lograr los resultados 
-                esperados en cada una de las áreas en donde se me ha asignado desarrollarme
-            </p>
+            <p class="hero__subtitle">Ingeniero en Desarrollo y Gestión de Software</p>
         </div>
     </header>
 
+    <section class="about_me">
+        <img src="images/User_Example.webp" alt="Foto de perfil" class="about_me__image">
+            <p class="about_me__description">
+                Soy un desarrollador web con experiencia estudiantil en tecnologías como C++ JavaScript, React, Node.js, y SQL entre otras tecnologías. 
+                Me encanta ser altamente motivador y comprometido, con una sólida formación académica en Tecnologías de la información por las universidades
+                USTH y UAEH, he acumulado años de experiencia laboral exitosa donde he demostrado habilidades destacadas en liderazgo, resolución de problemas
+                y manejo de personal en números mayores a 50 personas; Mi enfoque orientado a resultados y mi capacidad para trabajar de manera colaborativa 
+                me han permitido lograr los resultados esperados en cada una de las áreas en donde se me ha asignado desarrollarme
+            </p>
+    </section>
+
     <section class="projects">
         <h2 class="projects__title">Proyectos</h2>
+        <br>
         <div class="projects__grid">
             <div class="projects__item">
                 <img src="images/Sistema_de_Gestion_Ciudadana_logo.webp" alt="Proyecto 1" class="projects__image">
@@ -47,7 +59,7 @@
     </section>
 
     <section class="technologies">
-        <h2 class="technologies__title">Tecnologías</h2>
+        <h2 class="technologies__title">Tecnologías Utilizadas</h2>
         <div class="technologies__icons">
             <img src="images/HTML_JS_CSS_Logo.webp" alt="HTML_JS_CSS">
             <img src="images/Bootstramp_logo.webp" alt="Bootstrap">
@@ -61,6 +73,90 @@
             <img src="images/mysql_logo.webp" alt="MySQL">
             <img src="images/python_logo.webp" alt="Python">
         </div>
+    </section>
+
+    <section class="courses_apply">
+        <h2 class= "courses__title">Cursos Estudiados</h2>
+        <br>
+        <div class = "courses__grid">
+            <div class = "course__item">
+                <a href="#"><img src="images/Curso_1.webp" alt="Curso_1" class = "course__image"></a>
+            </div>
+            <div class = "course__item">
+                <a href="#"><img src="images/Curso_2.webp" alt="Curso_1" class = "course__image"></a>
+            </div>
+            <div class = "course__item">
+                <a href="#"><img src="images/Curso_3.webp" alt="Curso_1" class = "course__image"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates">
+        <h2 class= "certificates__title">Estudios</h2>
+        <br>
+        <div class = "certificates__grid">
+            <div class="certificates__item">
+                <a href="#"><img src="images/UAEH_LOGO.webp" alt="certificates_1" class = "certificates__image"></a>
+                <h6>Licenciatura en Ciencias Computacionales</h6>
+                <h6>Desarrollo Trunco</h6>
+                <p>Promedio Final : 8.2</p>
+            </div>
+            <div class="certificates__item">
+                <a href="#"><img src="images/UTSH_LOGO.webp" alt="certificates_2" class = "certificates__image"></a>
+                <h6>ING. en Desarrollo y Gestión de Software</h6>
+                <h6>En desarrollo</h6>
+                <p>Promedio Actual : 9.2</p>
+            </div>
+            <div class= "certificates__item">
+                <a href="#"><img src="images/CECYTEH_LOGO.webp" alt="certificates_3" class = "certificates__image"></a>
+                <h6>Tecnico en Soporte y Mantenimiento del Equipo de Cómputo</h6>
+                <h6>Terminado</h6>
+                <p>Promedio Final : 9.0 </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <h2 class ="experience__title">Experiencia en el Medio</h2>
+        <br>
+        <div class= "experience__grid">
+            <div class="experience__item">
+                <a href="#"><img src="images/BOLMARE_LOGO.webp" alt="experience_1" class = "experience__image"></a>
+                <h6>Distribuidora BOLMARE</h6>
+                <h6>Puesto: Gestor de Insumos e Inventario</h6>
+                <p> Duracion: 2 años</p>
+            </div>
+            <div class="experience__item">
+                <a href="#"><img src="images/SNS_LOGO.webp" alt="experience_2" class = "experience__image"></a>
+                <h6>SNS Inteligencia y Tecnologia</h6>
+                <h6>Puesto : Desarrollador de Software Multiplataforma</h6>
+                <p>Duracion : 4 Meses</p>
+            </div>
+            <div class= "experience__item">
+                <a href="#"><img src="images/CONAFE_LOGO.webp" alt="experience_3" class = "experience__image"></a>
+                <h6>Consejo Nacional de Fomento Educativo</h6>
+                <h6>Puesto: Capacitador Tutor; Tecnico en SyMEC</h6>
+                <p>Duracion : 2 Años</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="more_about_me">
+        <h2 class= "more_about_me__title">Algo más de mi</h2>
+        <br>
+        <div class = "more_about_me__grid">
+            <div class="more_about_me__item">
+                <a href="#"><img src="images/DAZER_LOGO.webp" alt="music_1" class = "more_about_me__image"></a>
+            </div>
+            <div class="more_about_me__item">
+                <a href="#"><img src="images/NU_SKULL_LOGO.webp" alt="music_2" class = "more_about_me__image"></a>
+            </div>
+        </div>
+        <p class="more_about_me__description">Anexo a mi modo de trabajo como pasión el hacer musica, en esta seccion doy a conocer un poco mas
+            de mi con mis elaboraciones musicales, a las cuales te intivo a conocer, tomar un poco de tu tiempo
+            libre y conocer mi material sin fin de lucro, solo con la finalidad de divertirse o experimentar 
+            nuevos ritmos en tu repertorio
+        </p>
     </section>
 
     <section class="contact">
@@ -80,6 +176,13 @@
             <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
         </div>
     </footer>
-
+    
+    <!--Scripts-->
+    <script>
+        function toggleMenu() {
+          document.querySelector(".nav__menu").classList.toggle("active");
+        }
+      </script>
+      <script href="script.js"></script>
 </body>
 </html>
