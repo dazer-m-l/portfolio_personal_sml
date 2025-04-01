@@ -12,7 +12,11 @@
         <a href="#" class="nav__logo">Portafolio</a>
         <ul class="nav__menu">
             <li><a href="#proyectos" class="nav__item">Proyectos</a></li>
+            <li><a href="#tecnologias" class="nav__item">Tec. Utilizadas</a></li>
+            <li><a href="#cursos" class="nav__item">Cursos</a></li>
+            <li><a href="#estudios" class="nav__item">Estudios</a></li>
             <li><a href="#experiencia" class="nav__item">Experiencia</a></li>
+            <li><a href="#about_more_me" class="nav__item">Algo + de mi</a></li>
             <li><a href="#contacto" class="nav__item">Contacto</a></li>
         </ul>
         <div class="nav__toggle" onclick="toggleMenu()">☰</div>
@@ -20,45 +24,42 @@
   
     <header class="hero">
         <div class="hero__content">
-            <h1 class="hero__title">Sergio Monter Lara</h1>
-            <p class="hero__subtitle">Ingeniero en Desarrollo y Gestión de Software</p>
+          <h1>Sergio Monter Lara</h1>
+          <p>Desarrollador Web | Backend | SyMEC</p>
+          <img src="images/2020704_FOTO.webp" alt="Foto de perfil" class="about_me__image">
+          <p class="about_me__description">
+            Soy un desarrollador web con experiencia estudiantil en tecnologías como C++ JavaScript, React, Node.js, y SQL entre otras tecnologías. 
+            Me encanta ser altamente motivador y comprometido, con una sólida formación académica en Tecnologías de la información por las universidades
+            USTH y UAEH, he acumulado años de experiencia laboral exitosa donde he demostrado habilidades destacadas en liderazgo, resolución de problemas
+            y manejo de personal en números mayores a 50 personas; Mi enfoque orientado a resultados y mi capacidad para trabajar de manera colaborativa 
+            me han permitido lograr los resultados esperados en cada una de las áreas en donde se me ha asignado desarrollarme
+        </p>
         </div>
-    </header>
+      </header>
 
-    <section class="about_me">
-        <img src="images/User_Example.webp" alt="Foto de perfil" class="about_me__image">
-            <p class="about_me__description">
-                Soy un desarrollador web con experiencia estudiantil en tecnologías como C++ JavaScript, React, Node.js, y SQL entre otras tecnologías. 
-                Me encanta ser altamente motivador y comprometido, con una sólida formación académica en Tecnologías de la información por las universidades
-                USTH y UAEH, he acumulado años de experiencia laboral exitosa donde he demostrado habilidades destacadas en liderazgo, resolución de problemas
-                y manejo de personal en números mayores a 50 personas; Mi enfoque orientado a resultados y mi capacidad para trabajar de manera colaborativa 
-                me han permitido lograr los resultados esperados en cada una de las áreas en donde se me ha asignado desarrollarme
-            </p>
-    </section>
-
-    <section class="projects">
+    <section class="projects" id="proyectos">
         <h2 class="projects__title">Proyectos</h2>
         <br>
         <div class="projects__grid">
             <div class="projects__item">
-                <img src="images/Sistema_de_Gestion_Ciudadana_logo.webp" alt="Proyecto 1" class="projects__image">
+                <a href="#"><img src="images/Sistema_de_Gestion_Ciudadana_logo.webp" alt="Proyecto 1" class="projects__image"></a>
                 <h6>Sistema Gestor de Entradas y Salidas (S-GEST)</h6>
                 <p class="projects__description">ReactJSX - Firebase - Tailwind CSS</p>
             </div>
             <div class="projects__item">
-                <img src="images/Sistema_de_Gestion_Ciudadana_logo.webp" alt="Proyecto 2" class="projects__image">
+                <a href="https://snsti.com/#products"><img src="images/Sistema_de_Gestion_Ciudadana_logo.webp" alt="Proyecto 2" class="projects__image"></a>
                 <h6>Sistema de Gestion Ciudadana</h6>
                 <p class="projects__description">ReactJSX - MySQL - Bootstrap</p>
             </div>
             <div class="projects__item">
-                <img src="images/SIGEMA_img.webp" alt="Proyecto 3" class="projects__image">
+                <a href="https://github.com/dazer-m-l/SIGEMA"><img src="images/SIGEMA_img.webp" alt="Proyecto 3" class="projects__image"></a>
                 <h6>Sistema Integrado de Gestion Médica y Atención (SIGEMA)</h6>
                 <p class="projects__description">ReactJSX - MySQL - Tailwind CSS - NodeJS</p>
             </div>
         </div>
     </section>
 
-    <section class="technologies">
+    <section class="technologies" id="tecnologias">
         <h2 class="technologies__title">Tecnologías Utilizadas</h2>
         <div class="technologies__icons">
             <img src="images/HTML_JS_CSS_Logo.webp" alt="HTML_JS_CSS">
@@ -75,40 +76,40 @@
         </div>
     </section>
 
-    <section class="courses_apply">
+    <section class="courses_apply" id="cursos">
         <h2 class= "courses__title">Cursos Estudiados</h2>
         <br>
         <div class = "courses__grid">
             <div class = "course__item">
-                <a href="#"><img src="images/Curso_1.webp" alt="Curso_1" class = "course__image"></a>
+                <a href="https://www.netacad.com/es/articles/news/s-introduction-to-cybersecurity-your-cyber-journey-starts-here?courseLang=es-XL"><img src="images/Curso_1.webp" alt="Curso_1" class = "course__image"></a>
             </div>
             <div class = "course__item">
-                <a href="#"><img src="images/Curso_2.webp" alt="Curso_1" class = "course__image"></a>
+                <a href="https://www.netacad.com/es/courses/python-essentials-1?courseLang=es-XL"><img src="images/Curso_2.webp" alt="Curso_1" class = "course__image"></a>
             </div>
             <div class = "course__item">
-                <a href="#"><img src="images/Curso_3.webp" alt="Curso_1" class = "course__image"></a>
+                <a href="https://www.netacad.com/es/courses/networking-essentials?courseLang=es-XL"><img src="images/Curso_3.webp" alt="Curso_1" class = "course__image"></a>
             </div>
         </div>
     </section>
 
-    <section class="certificates">
+    <section class="certificates" id="estudios">
         <h2 class= "certificates__title">Estudios</h2>
         <br>
         <div class = "certificates__grid">
             <div class="certificates__item">
-                <a href="#"><img src="images/UAEH_LOGO.webp" alt="certificates_1" class = "certificates__image"></a>
+                <a href="https://www.uaeh.edu.mx/campus/icbi/investigacion/aac/lcc.html"><img src="images/UAEH_LOGO.webp" alt="certificates_1" class = "certificates__image"></a>
                 <h6>Licenciatura en Ciencias Computacionales</h6>
                 <h6>Desarrollo Trunco</h6>
                 <p>Promedio Final : 8.2</p>
             </div>
             <div class="certificates__item">
-                <a href="#"><img src="images/UTSH_LOGO.webp" alt="certificates_2" class = "certificates__image"></a>
+                <a href="https://utsh.edu.mx/oferta-educativa-utsh/idgs/"><img src="images/UTSH_LOGO.webp" alt="certificates_2" class = "certificates__image"></a>
                 <h6>ING. en Desarrollo y Gestión de Software</h6>
                 <h6>En desarrollo</h6>
                 <p>Promedio Actual : 9.2</p>
             </div>
             <div class= "certificates__item">
-                <a href="#"><img src="images/CECYTEH_LOGO.webp" alt="certificates_3" class = "certificates__image"></a>
+                <a href="https://www.cecyteh.edu.mx/generar_oferta_educativa.php?id_carrera=25"><img src="images/CECYTEH_LOGO.webp" alt="certificates_3" class = "certificates__image"></a>
                 <h6>Tecnico en Soporte y Mantenimiento del Equipo de Cómputo</h6>
                 <h6>Terminado</h6>
                 <p>Promedio Final : 9.0 </p>
@@ -116,24 +117,24 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section class="experience" id="experiencia">
         <h2 class ="experience__title">Experiencia en el Medio</h2>
         <br>
         <div class= "experience__grid">
             <div class="experience__item">
-                <a href="#"><img src="images/BOLMARE_LOGO.webp" alt="experience_1" class = "experience__image"></a>
+                <a href="https://www.facebook.com/DistribuidoraBolmare"><img src="images/BOLMARE_LOGO.webp" alt="experience_1" class = "experience__image"></a>
                 <h6>Distribuidora BOLMARE</h6>
                 <h6>Puesto: Gestor de Insumos e Inventario</h6>
                 <p> Duracion: 2 años</p>
             </div>
             <div class="experience__item">
-                <a href="#"><img src="images/SNS_LOGO.webp" alt="experience_2" class = "experience__image"></a>
+                <a href="https://snsti.com/"><img src="images/SNS_LOGO.webp" alt="experience_2" class = "experience__image"></a>
                 <h6>SNS Inteligencia y Tecnologia</h6>
                 <h6>Puesto : Desarrollador de Software Multiplataforma</h6>
                 <p>Duracion : 4 Meses</p>
             </div>
             <div class= "experience__item">
-                <a href="#"><img src="images/CONAFE_LOGO.webp" alt="experience_3" class = "experience__image"></a>
+                <a href="https://cnfsiiinafe.conafe.gob.mx/Registro"><img src="images/CONAFE_LOGO.webp" alt="experience_3" class = "experience__image"></a>
                 <h6>Consejo Nacional de Fomento Educativo</h6>
                 <h6>Puesto: Capacitador Tutor; Tecnico en SyMEC</h6>
                 <p>Duracion : 2 Años</p>
@@ -141,15 +142,15 @@
         </div>
     </section>
 
-    <section class="more_about_me">
+    <section class="more_about_me" id="about_more_me">
         <h2 class= "more_about_me__title">Algo más de mi</h2>
         <br>
         <div class = "more_about_me__grid">
             <div class="more_about_me__item">
-                <a href="#"><img src="images/DAZER_LOGO.webp" alt="music_1" class = "more_about_me__image"></a>
+                <a href="https://www.youtube.com/@dazeroficial7461"><img src="images/DAZER_LOGO.webp" alt="music_1" class = "more_about_me__image"></a>
             </div>
             <div class="more_about_me__item">
-                <a href="#"><img src="images/NU_SKULL_LOGO.webp" alt="music_2" class = "more_about_me__image"></a>
+                <a href="https://www.youtube.com/@nuskullcrewoficial6865"><img src="images/NU_SKULL_LOGO.webp" alt="music_2" class = "more_about_me__image"></a>
             </div>
         </div>
         <p class="more_about_me__description">Anexo a mi modo de trabajo como pasión el hacer musica, en esta seccion doy a conocer un poco mas
@@ -159,7 +160,7 @@
         </p>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contacto">
         <h2 class="contact__title">Contacto</h2>
         <form class="contact__form">
             <input type="text" class="contact__input" placeholder="Tu nombre">
@@ -171,18 +172,18 @@
 
     <footer class="footer">
         <p class="footer__text">&copy; 2025 - Todos los derechos reservados</p>
-        <div class="footer__social">
-            <a href="#"><img src="images/github.webp" alt="GitHub"></a>
-            <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+        <div class="footer__icons">
+            <a href="https://github.com/dazer-m-l/dazer-m-l"><img src="images/github_icon.webp" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/sergio-m-l-ab6614259/"><img src="images/linkedin-blue-logo-icon.webp" alt="LinkedIn"></a>
         </div>
     </footer>
     
-    <!--Scripts-->
-    <script>
-        function toggleMenu() {
-          document.querySelector(".nav__menu").classList.toggle("active");
-        }
-      </script>
-      <script href="script.js"></script>
+        <!--Scripts-->
+        <script>
+            function toggleMenu() {
+              document.querySelector(".nav__menu").classList.toggle("active");
+            }
+          </script>
+          <script href="script.js"></script>
 </body>
 </html>
